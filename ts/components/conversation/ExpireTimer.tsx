@@ -67,8 +67,11 @@ export class ExpireTimer extends React.Component<Props> {
             ? 'module-expire-timer--with-image-no-caption'
             : null,
           withSticker ? 'module-expire-timer--with-sticker' : null
-        )}
-      />
+        )}>
+          {/* added */}
+        <span className="expireHoverText">{expirationLength}</span>
+          {/* end added */}
+      </div>
     );
   }
 }
